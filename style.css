@@ -1,7 +1,15 @@
-/* Utilities */
+/* Utilities start */
 * {
     margin: 0;
     padding: 0;
+}
+
+:root {
+    --yellow: #e3ab0fd9;
+    --dark-blue: #008b8b;
+    --black-1:rgba(0, 0, 0, 0.55);
+    --black-2: #403b3b;
+    --bg-color-light-white: rgb(231 231 231);
 }
 
 html {
@@ -9,7 +17,8 @@ html {
 }
 
 body {
-    color: rgba(0, 0, 0, 0.55);
+    color: var(--black-1);
+    font-family: myFont-8;
 }
 
 div {
@@ -30,19 +39,19 @@ a {
     border: 0;
     border-radius: 80px;
     padding: 10px 20px;
-    /* color: rgba(0, 0, 0, 0.8); */
-    background-color: rgb(231 231 231);
+    color: rgba(0, 0, 0, 0.55);
+    background-color: var(--bg-color-light-white);
 }
 
 .btn:hover {
     cursor: pointer;
     color: white;
-    background-color: darkcyan;
+    background-color: var(--dark-blue);
 }
 
 .active {
     color: white;
-    background-color: darkcyan;
+    background-color: var(--dark-blue);
 }
 
 .shadow {
@@ -93,9 +102,11 @@ a {
     font-family: myFont-9;
     src: url(./assets/fonts/Lato-Thin.ttf);
 }
+/* Utilities end */
+
 /* Navbar start */
 .navbar {
-    background-color: rgb(231 231 231);
+    background-color: var(--bg-color-light-white);
     padding: 20px 0;
 }
 
@@ -113,18 +124,18 @@ a {
 }
 
 .nav ul li a {
-    color: rgba(0, 0, 0, 0.55);
+    color: var(--black-1);
     display: block;
-    padding: 10px 20px;
+    padding: 10px 18px;
 }
 
 .nav ul li a:hover {
-    color: gold;
+    color: var(--yellow);
 }
 
 .nav-logo {
     display: inline-block;
-    width: 440px;
+    width: 430px;
     text-align: center;
     vertical-align: middle;
 }
@@ -140,7 +151,7 @@ a {
 
 /* Home page start */
 .home-page {
-    background-color: rgb(231 231 231);
+    background-color: var(--bg-color-light-white);
     height: 530px;
 }
 
@@ -175,16 +186,20 @@ a {
     width: 500px;
 }
 
+.home-head {
+    margin-bottom: 5px;
+}
+
 .home-head h4 {
     display: inline-block;
-    color: darkcyan;
+    color: var(--dark-blue);
 }
 
 .line-box {
     display: inline-block;
     width: 40px;
     height: 3px;
-    background-color: gold;
+    background-color: var(--yellow);
     vertical-align: middle;
     margin-right: 15px;
 }
@@ -193,9 +208,17 @@ a {
     padding-right: 88px;
 }
 
-.home-text h1 {
-    color: black;
-    font-size: 50px;
+.home-title {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+.home-title h1 {
+    color: var(--black-2);
+    font-size: 60px;
+    font-family: myFont-1;
+    font-weight: 100;
+    letter-spacing: 2px;
 }
 
 .home-text p {
@@ -221,12 +244,12 @@ a {
 }
 
 .home-list ul li a{
-    color: rgba(0, 0, 0, 0.55);
+    color: var(--black-1);
 }
 
 .home-list ul li::before {
     content: "\2022";
-    color: goldenrod;
+    color: var(--yellow);
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -249,7 +272,7 @@ a {
 
 .float-content {
     position: absolute;
-    top: -40px;
+    top: -50px;
     left: 0;
     bottom: 0;
     right: 0;
@@ -267,12 +290,12 @@ a {
 }
 
 .float-box:hover {
-    background-color: darkcyan;
+    background-color: var(--dark-blue);
     /* color: gold; */
 }
 
 .float-box:hover h2 {
-    color: gold;
+    color: var(--yellow);
 }
 
 .float-box:hover p {
@@ -292,14 +315,14 @@ a {
 }
 
 .float-wrap-box h2 {
-    color: darkcyan;
+    color: var(--dark-blue);
     margin-bottom: 30px;
 }
 
 .float-line-box {
     height: 3px;
     width: 100%;
-    background-color: gold;
+    background-color: var(--yellow);
     margin-top: 15px;
 }
 /* Float page end */

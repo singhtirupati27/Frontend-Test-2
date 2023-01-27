@@ -1,0 +1,305 @@
+/* Utilities */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper-container {
+    width: 1180px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.btn {
+    border: 0;
+    border-radius: 80px;
+    padding: 10px 20px;
+    /* color: rgba(0, 0, 0, 0.8); */
+    background-color: rgb(231 231 231);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: darkcyan;
+}
+
+.active {
+    color: white;
+    background-color: darkcyan;
+}
+
+.shadow {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.65);
+}
+
+@font-face {
+    font-family: myFont-1;
+    src: url(./assets/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont-2;
+    src: url(./assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: myFont-3;
+    src: url(./assets/fonts/Lato-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: myFont-4;
+    src: url(./assets/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFont-5;
+    src: url(./assets/fonts/Lato-Italic.ttf);
+}
+
+@font-face {
+    font-family: myFont-6;
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: myFont-7;
+    src: url(./assets/fonts/Lato-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: myFont-8;
+    src: url(./assets/fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: myFont-9;
+    src: url(./assets/fonts/Lato-Thin.ttf);
+}
+/* Navbar start */
+.navbar {
+    background-color: rgb(231 231 231);
+    padding: 20px 0;
+}
+
+.nav {
+    display: inline-block;
+}
+
+.nav ul  {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.nav ul li {
+    display: inline-block;
+}
+
+.nav ul li a {
+    color: rgba(0, 0, 0, 0.55);
+    display: block;
+    padding: 10px 20px;
+}
+
+.nav ul li a:hover {
+    color: gold;
+}
+
+.nav-logo {
+    display: inline-block;
+    width: 440px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.nav-logo a {
+    display: inline-block;
+}
+
+.nav-btn {
+    float: right;
+}
+/* Navbar end */
+
+/* Home page start */
+.home-page {
+    background-color: rgb(231 231 231);
+    height: 530px;
+}
+
+.home-wrap {
+    position: relative;
+}
+
+.home-content {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    bottom: 0;
+}
+
+.home-text {
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+.home-img {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: right;
+}
+
+.home-img img {
+    height: 500px;
+    width: 500px;
+}
+
+.home-head h4 {
+    display: inline-block;
+    color: darkcyan;
+}
+
+.line-box {
+    display: inline-block;
+    width: 40px;
+    height: 3px;
+    background-color: gold;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+.home-para {
+    padding-right: 88px;
+}
+
+.home-text h1 {
+    color: black;
+    font-size: 50px;
+}
+
+.home-text p {
+    line-height: 1.5;
+}
+
+.home-btn {
+    margin: 20px 0;
+}
+
+.home-list {
+    width: 350px
+}
+
+.home-list ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.home-list ul li {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.home-list ul li a{
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.home-list ul li::before {
+    content: "\2022";
+    color: goldenrod;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.home-list ul .no-desc::before {
+    content: none;
+}
+/* Home page end */
+
+/* Float page start */
+.float-page {
+    background-color: white;
+    height: 150px;
+}
+
+.float-wrap {
+    position: relative;
+    height: 100%;
+}
+
+.float-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 1000px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.float-box {
+    float: left;
+    width: 24%;
+    height: 100%;
+    background-color: white;
+    margin-right: 10px;
+}
+
+.float-box:hover {
+    background-color: darkcyan;
+    /* color: gold; */
+}
+
+.float-box:hover h2 {
+    color: gold;
+}
+
+.float-box:hover p {
+    color: white;
+}
+
+.float-box:first-child {
+    margin-left: 5px;
+}
+
+.float-box:last-child {
+    margin-right: 0;
+}
+
+.float-wrap-box {
+    padding: 18px;
+}
+
+.float-wrap-box h2 {
+    color: darkcyan;
+    margin-bottom: 30px;
+}
+
+.float-line-box {
+    height: 3px;
+    width: 100%;
+    background-color: gold;
+    margin-top: 15px;
+}
+/* Float page end */

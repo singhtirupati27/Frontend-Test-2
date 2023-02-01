@@ -147,6 +147,26 @@ a {
 .nav-btn {
     float: right;
 }
+
+.nav-btn ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.nav-btn ul li a {
+    display: block;
+    color: var(--black-1);
+    border: 0;
+    border-radius: 80px;
+    padding: 10px 20px;
+    background-color: var(--bg-color-light-white);
+}
+
+.nav-btn ul li a:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--dark-blue);
+}
 /* Navbar end */
 
 /* Home page start */
@@ -190,19 +210,29 @@ a {
     margin-bottom: 5px;
 }
 
+.home-head:before {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background-color: var(--yellow);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
 .home-head h4 {
     display: inline-block;
     color: var(--dark-blue);
 }
 
-.line-box {
+/* .line-box {
     display: inline-block;
     width: 40px;
     height: 3px;
     background-color: var(--yellow);
     vertical-align: middle;
     margin-right: 15px;
-}
+} */
 
 .home-para {
     padding-right: 88px;
@@ -311,18 +341,24 @@ a {
 }
 
 .float-wrap-box {
-    padding: 18px;
+    /* padding: 18px; */
+    margin: 18px;
+    border-bottom: 3px solid var(--yellow);
 }
 
 .float-wrap-box h2 {
     color: var(--dark-blue);
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-.float-line-box {
+.float-wrap-box p {
+    margin-bottom: 20px;
+}
+
+/* .float-line-box {
     height: 3px;
     width: 100%;
     background-color: var(--yellow);
     margin-top: 15px;
-}
+} */
 /* Float page end */
